@@ -1,47 +1,55 @@
-
 # 🍕 AI-Powered Food Delivery Time Prediction
 
-A Machine Learning web application built with **Python**, **Scikit-learn**, and **Streamlit** that predicts food delivery time using real-world delivery factors such as weather, traffic, distance, vehicle type, and delivery partner information.
+<p align="center">
+  <b>Predict food delivery time using Machine Learning and Streamlit.</b><br>
+  Built with Python, Scikit-learn, and an interactive web interface.
+</p>
+
+---
+
+## 📖 Overview
+
+This project predicts the estimated delivery time for food orders based on delivery partner information, weather conditions, traffic density, vehicle type, city, and several other real-world factors.
+
+The application uses a trained Machine Learning model to generate delivery time predictions instantly through an intuitive Streamlit interface.
 
 ---
 
 ## 📸 Project Preview
 
-### 🏠 Dashboard
+### 🏠 Home Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
----
-
 ### 🚚 Prediction Result
 
-![Prediction Result](screenshots/prediction.png)
+![Prediction](screenshots/prediction.png)
 
 ---
 
 ## ✨ Features
 
-- 🤖 AI-powered delivery time prediction
-- 📍 Automatic distance calculation using the Haversine Formula
-- 🌦 Weather and traffic analysis
-- 🚗 Vehicle and order information
-- 🏙 City-wise prediction
-- 📅 Order date and pickup time inputs
-- 📊 Interactive delivery insights
-- 📈 ETA visualization
-- 💎 Modern glassmorphism-inspired UI
-- 📱 Responsive Streamlit interface
+* 🤖 Machine Learning-based delivery time prediction
+* 📍 Automatic distance calculation using the Haversine Formula
+* 🌦 Weather and traffic condition analysis
+* 🚗 Vehicle and order type selection
+* 🏙 City-based prediction
+* 📅 Order and pickup time inputs
+* 📊 Instant prediction results
+* 📈 Interactive Streamlit dashboard
+* 💎 Clean, modern, responsive user interface
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- Python
-- Streamlit
-- Scikit-learn
-- Pandas
-- NumPy
-- Plotly
+| Category         | Tools         |
+| ---------------- | ------------- |
+| Programming      | Python        |
+| Machine Learning | Scikit-learn  |
+| Data Analysis    | Pandas, NumPy |
+| Visualization    | Plotly        |
+| Web App          | Streamlit     |
 
 ---
 
@@ -59,34 +67,73 @@ Food-Delivery-Time-Prediction/
 ├── requirements.txt
 ├── README.md
 │
-└── screenshots/
-    ├── dashboard.png
-    └── prediction.png
+├── screenshots/
+│   ├── dashboard.png
+│   └── prediction.png
+│
+└── Food Delivery Time Prediction.ipynb
 ```
 
 ---
 
-## ⚙️ Installation
+## 📊 Model Features
 
-Clone the repository:
+The model uses the following inputs:
+
+* Delivery Person Age
+* Delivery Person Ratings
+* Restaurant Latitude & Longitude
+* Delivery Location Latitude & Longitude
+* Weather Conditions
+* Road Traffic Density
+* Vehicle Condition
+* Type of Order
+* Type of Vehicle
+* Multiple Deliveries
+* Festival
+* City
+* Order Date
+* Order Time
+* Pickup Time
+* Distance (Calculated)
+
+---
+
+## ⚙️ Machine Learning Pipeline
+
+1. Data Cleaning
+2. Missing Value Handling
+3. Feature Engineering
+4. Label Encoding
+5. Distance Calculation (Haversine Formula)
+6. Feature Scaling
+7. Random Forest Model Training
+8. Model Evaluation
+9. Streamlit Deployment
+
+---
+
+## 🚀 Installation
+
+### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Food-Delivery-Time-Prediction.git
+git clone https://github.com/sejalpatole/Food-Delivery-Time-Prediction.git
 ```
 
-Go to the project folder:
+### Navigate to the project folder
 
 ```bash
 cd Food-Delivery-Time-Prediction
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+### Run the application
 
 ```bash
 streamlit run app.py
@@ -94,47 +141,15 @@ streamlit run app.py
 
 ---
 
-## 📊 Model Input Features
+## 📈 Future Enhancements
 
-- Delivery Person Age
-- Delivery Person Ratings
-- Restaurant Latitude & Longitude
-- Delivery Location Latitude & Longitude
-- Weather Conditions
-- Road Traffic Density
-- Vehicle Condition
-- Type of Order
-- Type of Vehicle
-- Multiple Deliveries
-- Festival
-- City
-- Order Date
-- Order Time
-- Pickup Time
-- Distance (Calculated)
-
----
-
-## 🔄 Machine Learning Pipeline
-
-1. Data Cleaning
-2. Feature Engineering
-3. Label Encoding
-4. Distance Calculation
-5. Feature Scaling
-6. Model Training
-7. Prediction
-8. Streamlit Deployment
-
----
-
-## 🚀 Future Improvements
-
-- Google Maps integration
-- Real-time weather API
-- Live traffic updates
-- Prediction history
-- Cloud deployment
+* Google Maps API integration
+* Real-time Weather API
+* Live Traffic API
+* Interactive route visualization
+* Prediction history
+* Model optimization
+* Cloud deployment improvements
 
 ---
 
@@ -142,148 +157,12 @@ streamlit run app.py
 
 **Sejal Patole**
 
-=======
-# 🍕 AI-Powered Food Delivery Time Prediction
-
-A Machine Learning web application built with **Python**, **Scikit-learn**, and **Streamlit** that predicts food delivery time using real-world delivery factors such as weather, traffic, distance, vehicle type, and delivery partner information.
+Aspiring Machine Learning Engineer passionate about building practical AI-powered applications using Python and Machine Learning.
 
 ---
 
-## 📸 Project Preview
+## ⭐ Support
 
-### 🏠 Dashboard
+If you found this project helpful, consider giving it a ⭐ on GitHub.
 
-![Dashboard](screenshots/dashboard.png)
-
----
-
-### 🚚 Prediction Result
-
-![Prediction Result](screenshots/prediction.png)
-
----
-
-## ✨ Features
-
-- 🤖 AI-powered delivery time prediction
-- 📍 Automatic distance calculation using the Haversine Formula
-- 🌦 Weather and traffic analysis
-- 🚗 Vehicle and order information
-- 🏙 City-wise prediction
-- 📅 Order date and pickup time inputs
-- 📊 Interactive delivery insights
-- 📈 ETA visualization
-- 💎 Modern glassmorphism-inspired UI
-- 📱 Responsive Streamlit interface
-
----
-
-## 🛠️ Tech Stack
-
-- Python
-- Streamlit
-- Scikit-learn
-- Pandas
-- NumPy
-- Plotly
-
----
-
-## 📂 Project Structure
-
-```text
-Food-Delivery-Time-Prediction/
-│
-├── app.py
-├── food_delivery_model.pkl
-├── scaler.pkl
-├── label_encoders.pkl
-├── train.csv
-├── test.csv
-├── requirements.txt
-├── README.md
-│
-└── screenshots/
-    ├── dashboard.png
-    └── prediction.png
-```
-
----
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/Food-Delivery-Time-Prediction.git
-```
-
-Go to the project folder:
-
-```bash
-cd Food-Delivery-Time-Prediction
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 📊 Model Input Features
-
-- Delivery Person Age
-- Delivery Person Ratings
-- Restaurant Latitude & Longitude
-- Delivery Location Latitude & Longitude
-- Weather Conditions
-- Road Traffic Density
-- Vehicle Condition
-- Type of Order
-- Type of Vehicle
-- Multiple Deliveries
-- Festival
-- City
-- Order Date
-- Order Time
-- Pickup Time
-- Distance (Calculated)
-
----
-
-## 🔄 Machine Learning Pipeline
-
-1. Data Cleaning
-2. Feature Engineering
-3. Label Encoding
-4. Distance Calculation
-5. Feature Scaling
-6. Model Training
-7. Prediction
-8. Streamlit Deployment
-
----
-
-## 🚀 Future Improvements
-
-- Google Maps integration
-- Real-time weather API
-- Live traffic updates
-- Prediction history
-- Cloud deployment
-
----
-
-## 👩‍💻 Author
-
-**Sejal Patole**
-
-Built with ❤️ using Python, Streamlit, and Machine Learning.
+It helps others discover the project and motivates future improvements.
