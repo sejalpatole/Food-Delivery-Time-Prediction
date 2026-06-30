@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🍕 AI-Powered Food Delivery Time Prediction
 
 A Machine Learning web application built with **Python**, **Scikit-learn**, and **Streamlit** that predicts food delivery time using real-world delivery factors such as weather, traffic, distance, vehicle type, and delivery partner information.
@@ -286,5 +286,4 @@ streamlit run app.py
 
 **Sejal Patole**
 
->>>>>>> daa0d739126036a05ad4a0800af5dea6b74b7e7a
 Built with ❤️ using Python, Streamlit, and Machine Learning.
